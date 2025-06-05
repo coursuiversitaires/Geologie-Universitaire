@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Site de Géologie</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <header class="header">
+    <div class="container">
+      <a href="#accueil" class="logo">🌍 MonSiteGéologie</a>
+      <nav class="nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#cours">Cours</a>
+        <a href="#telechargements">Téléchargements</a>
+        <a href="#videos">Vidéos</a>
+        <a href="#ressources">Ressources</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Accueil -->
+  <section id="accueil" class="section accueil">
+    <div class="container">
+      <h1>Bienvenue sur MonSiteGéologie</h1>
+      <p>Une plateforme dédiée aux étudiants en géologie : cours, documents, vidéos et bien plus.</p>
+    </div>
+  </section>
+
+  <!-- Section Cours -->
+  <section id="cours" class="section cours">
+    <div class="container">
+      <h2>Mes Cours</h2>
+      <div class="liste-cours">
+        <div class="cours-item">
+          <h3>Géologie Générale</h3>
+          <p>Introduction à la géologie, roches, minéraux, tectonique des plaques.</p>
+          <a href="docs/geologie.pdf" class="btn" target="_blank">Voir le cours</a>
+        </div>
+        <div class="cours-item">
+          <h3>Paléontologie</h3>
+          <p>Étude des fossiles, évolution de la vie sur Terre.</p>
+          <a href="docs/paleontologie.pdf" class="btn" target="_blank">Voir le cours</a>
+        </div>
+        <div class="cours-item">
+          <h3>Pétrologie</h3>
+          <p>Formation et classification des roches magmatiques, métamorphiques et sédimentaires.</p>
+          <a href="docs/petrologie.pdf" class="btn" target="_blank">Voir le cours</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Téléchargements -->
+  <section id="telechargements" class="section telechargements">
+    <div class="container">
+      <h2>Téléchargements</h2>
+      <div class="fichiers">
+        <div class="fichier-item">
+          <h4>Plan du cours de Géologie</h4>
+          <a href="docs/plan-geologie.pdf" class="btn" download>Télécharger PDF</a>
+        </div>
+        <div class="fichier-item">
+          <h4>Présentation Fossiles</h4>
+          <a href="docs/fossiles.pptx" class="btn" download>Télécharger PPT</a>
+        </div>
+        <div class="fichier-item">
+          <h4>Fiches de révision</h4>
+          <a href="docs/fiches.zip" class="btn" download>Télécharger ZIP</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Vidéos -->
+  <section id="videos" class="section videos">
+    <div class="container">
+      <h2>Vidéos pédagogiques</h2>
+      <div class="videos-grid">
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+          <p>Introduction à la géologie</p>
+        </div>
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+          <p>Les fossiles et leur importance</p>
+        </div>
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+          <p>Cycle des roches expliqué</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Ressources -->
+  <section id="ressources" class="section ressources">
+    <div class="container">
+      <h2>Ressources externes</h2>
+      <div class="liens-utiles">
+        <div class="lien-item">
+          <h4>Université Virtuelle de Géosciences</h4>
+          <a href="https://geosciences.univ-virtuelle.org" class="btn" target="_blank">Visiter le site</a>
+        </div>
+        <div class="lien-item">
+          <h4>Chaîne YouTube – Géologie</h4>
+          <a href="https://youtube.com/tonchannel" class="btn" target="_blank">Voir la chaîne</a>
+        </div>
+        <div class="lien-item">
+          <h4>Atlas Géologique</h4>
+          <a href="https://www.atlas-geologique.fr" class="btn" target="_blank">Accéder à l’atlas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <form action="mailto:tonadresse@email.com" method="post" enctype="text/plain">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit" class="btn">Envoyer</button>
+        </form>
+        <div class="reseaux">
+          <p>Tu peux aussi me contacter via :</p>
+          <ul>
+            <li><a href="https://facebook.com/tonprofil" target="_blank">🌐 Facebook</a></li>
+            <li><a href="https://youtube.com/tonchannel" target="_blank">📺 YouTube</a></li>
+            <li><a href="mailto:tonadresse@email.com">✉️ Email direct</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 MonSiteGéologie. Tous droits réservés.</p>
+      <ul class="footer-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#cours">Cours</a></li>
+        <li><a href="#telechargements">Téléchargements</a></li>
+        <li><a href="#videos">Vidéos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
